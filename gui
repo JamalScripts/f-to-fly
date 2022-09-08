@@ -1,0 +1,31 @@
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+local Window = Library.CreateLib("V1 | Made by jamaljackson6t9 | Just_Random#1188", "GrapeTheme")
+
+-- Character
+local Character = Window:NewTab("Character")
+local CharacterSection = Character:NewSection("Character")
+
+-- Character Buttons
+CharacterSection:NewButton("Ctrl + Click to Tp", "Ctrl + Left Click to Tp", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/JamalScripts/f-to-fly/main/ctrl%20%2B%20click%20to%20tp"))()
+end)
+
+CharacterSection:NewButton("Fly", "you just fly...", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/JamalScripts/f-to-fly/main/f%20to%20fly"))()
+end)
+
+CharacterSection:NewButton("Human Flashlight", "you become light", function()
+    loadstring(game:HttpGet("https://cdn.wearedevs.net/scripts/Human%20Flashlight.txt"))()
+end)
+
+CharacterSection:NewButton("Btools", "", function()
+    loadstring(game:HttpGet("https://cdn.wearedevs.net/scripts/BTools.txt"))()
+end)
+
+CharacterSection:NewButton("Infinite Jump", "Can Jump in the air", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/JamalScripts/f-to-fly/main/infinite%20jump"))()
+end)
+
+CharacterSection:NewSlider("WalkSpeed", "Change ur walkspeed", 500, 0, function(s) -- 500 (MaxValue) | 0 (MinValue)
+    game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = s
+end)
