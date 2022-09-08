@@ -10,7 +10,7 @@ CharacterSection:NewButton("Ctrl + Click to Tp", "Ctrl + Left Click to Tp", func
     loadstring(game:HttpGet("https://raw.githubusercontent.com/JamalScripts/f-to-fly/main/ctrl%20%2B%20click%20to%20tp"))()
 end)
 
-CharacterSection:NewButton("Fly", "you just fly...", function()
+CharacterSection:NewButton("Fly (F to toggle)", "you just fly...", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/JamalScripts/f-to-fly/main/f%20to%20fly"))()
 end)
 
