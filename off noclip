@@ -1,0 +1,23 @@
+local Players, Player = game:GetService("Players"), game:GetService("Players").LocalPlayer -- im trying something new with my coding
+getgenv().FuckYouSkid = false
+getgenv().NoPlatformNoclip = true -- the patched platformnoclip unpatched thanks to the two lines below credits to Panda
+getgenv().CanCollide = false -- basic everyday noclip
+
+if setfflag then
+    setfflag("HumanoidParallelRemoveNoPhysics", "False") -- thank you panda your hot UwU
+    setfflag("HumanoidParallelRemoveNoPhysicsNoSimulate2", "False")
+end
+
+game:GetService("RunService").Stepped:Connect(
+    function()
+        if getgenv().FuckYouSkid then
+            for i, v in pairs(Player.Character:GetChildren()) do
+                if v:IsA("BasePart") and getgenv().CanCollide then
+                    v.CanCollide = false-- boring old CanCollide Right?
+                elseif v:IsA("Humanoid") and getgenv().NoPlatformNoclip then
+                    v:ChangeState(11) -- sexy
+                end
+            end
+        end
+    end
+)
