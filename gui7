@@ -1,0 +1,189 @@
+--[[Made by Just_Random#1188 and Fruity Pebbles#3302]]--
+
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+local Window = Library.CreateLib("V1 | Made by jamaljackson6t9 | Just_Random#1188", "GrapeTheme")
+
+-- Character Section
+local Character = Window:NewTab("Character")
+local CharacterSection = Character:NewSection("Character")
+
+-- Tp Section
+local Tp = Window:NewTab("Tp")
+local TpSection = Tp:NewSection("Tp")
+
+-- World Section
+local World = Window:NewTab("World")
+local WorldSection = World:NewSection("World")
+
+-- Character Buttons
+CharacterSection:NewButton("Ctrl + Click to Tp", "Ctrl + Left Click to Tp", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/JamalScripts/f-to-fly/main/ctrl%20%2B%20click%20to%20tp"))()
+end)
+
+CharacterSection:NewButton("Fly (F to toggle)", "you just fly...", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/JamalScripts/f-to-fly/main/f%20to%20fly"))()
+end)
+
+CharacterSection:NewButton("Human Flashlight", "you become light", function()
+    loadstring(game:HttpGet("https://cdn.wearedevs.net/scripts/Human%20Flashlight.txt"))()
+end)
+
+CharacterSection:NewButton("Btools (client side only)", "edit the game", function()
+    loadstring(game:HttpGet("https://cdn.wearedevs.net/scripts/BTools.txt"))()
+end)
+
+CharacterSection:NewButton("Infinite Jump", "Can Jump in the air", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/JamalScripts/f-to-fly/main/infinite%20jump"))()
+end)
+
+CharacterSection:NewToggle("WalkSpeed", "go fast", function(state)
+    if state then
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/JamalScripts/f-to-fly/main/walkspeed%20150"))()
+    else
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/JamalScripts/f-to-fly/main/walkspeed%2016"))()
+    end
+end)
+
+CharacterSection:NewToggle("JumpPower", "jump high", function(state)
+    if state then
+        game.Players.LocalPlayer.Character.Humanoid.JumpPower = 120
+    else
+        game.Players.LocalPlayer.Character.Humanoid.JumpPower = 50
+    end
+end)
+
+CharacterSection:NewToggle("NoClip", "walk through walls", function(state)
+    if state then
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/JamalScripts/f-to-fly/main/on%20noclip"))()
+    else
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/JamalScripts/f-to-fly/main/off%20noclip"))()
+    end
+end)
+
+-- Tp Buttons
+TpSection:NewButton("Spawn", "Tp to Spawn", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(172.4000701904297, 2.9999992847442627, 74)
+end)
+
+TpSection:NewButton("WoodrUs", "Tp to WoodrUs", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(260.5835266113281, 3.1999993324279785, 57.27164840698242)
+end)
+
+TpSection:NewButton("LandStore", "Tp to LandStore", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(272.10211181640625, 3.200099229812622, -98.73219299316406)
+end)
+
+TpSection:NewButton("Bridge", "Tp to Bridge", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(115.8986587524414, 3.2000045776367188, -609.8047485351562)
+end)
+
+TpSection:NewButton("Fancy Furnishings", "Tp to Fancy Furnishings", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(491.28387451171875, 3.200005292892456, -1719.6500244140625)
+end)
+
+TpSection:NewButton("Boxed Cars", "Tp to Boxed Cars", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(509.49993896484375, 3.1999993324279785, -1461.4393310546875)
+end)
+
+TpSection:NewButton("Bobs Shack", "Tp to Bobs Shack", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(260.842529296875, 8.400835037231445, -2541.88916015625)
+end)
+
+TpSection:NewButton("Link Logic", "Tp to Link Logic", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(4608.6982421875, 7.000839710235596, -783.5457763671875)
+end)
+
+TpSection:NewButton("Fine Arts", "Tp to Fine Arts", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(5222.88671875, -166.00003051757812, 720.1613159179688)
+end)
+
+TpSection:NewButton("Volcano", "Tp to Volcano", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-1587.3580322265625, 622.9998779296875, 1137.6668701171875)
+end)
+
+TpSection:NewButton("Bridge to Swamp", "Tp to ", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-1298.2188720703125, 295.2008361816406, 729.990234375)
+end)
+
+TpSection:NewButton("Swamp", "Tp to Swamp", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-1233.5147705078125, 148.00131225585938, -603.7015991210938)
+end)
+
+TpSection:NewButton("Snowglow", "Tp to Snowglow", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-1124.921142578125, 1.100217342376709, -944.2655029296875)
+end)
+
+TpSection:NewButton("Palm1", "Tp to Palm1", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(2596.181884765625, -5.899986743927002, -23.357633590698242)
+end)
+
+TpSection:NewButton("Palm2", "Tp to ", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1930.397705078125, -5.900002956390381, -1489.354248046875)
+end)
+
+TpSection:NewButton("Palm3", "Tp to ", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(4369.55712890625, -5.900002956390381, -1810.7005615234375)
+end)
+
+TpSection:NewButton("Cave", "Tp to Cave", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(3581, -179.53941345214844, 430)
+end)
+
+TpSection:NewButton("Ice Wood", "Tp to Ice Wood", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1455.98681640625, 412.3657531738281, 3238.097412109375)
+end)
+
+TpSection:NewButton("End Time", "Tp to End Time", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-37.33138656616211, -212.9001922607422, -1336.306640625)
+end)
+
+TpSection:NewButton("Green Box", "Tp to Green Box", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-1668.3919677734375, 349.6019287109375, 1475.362548828125)
+end)
+
+TpSection:NewButton("Lodge", "Tp to Lodge", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1244.775634765625, 63.59999465942383, 2306.545166015625)
+end)
+
+TpSection:NewButton("Dock1", "Tp to Dock1", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1121.931884765625, -1.2000136375427246, -199.51361083984375)
+end)
+
+TpSection:NewButton("Dock2", "Tp to ", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(4413.9951171875, -1.199413776397705, 73.6961441040039)
+end)
+
+TpSection:NewButton("Den", "Tp to Den", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(324.6485290527344, 41.79985046386719, 1929.398193359375)
+end)
+
+TpSection:NewButton("Strange Man", "Tp to Strange Man", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1066.52685546875, 16.799598693847656, 1134.0386962890625)
+end)
+
+-- World Buttons
+WorldSection:NewToggle("Jesus (walk on water)", "Walk on water", function(state)
+    if state then
+        for _,v in pairs(game.Workspace.Water:GetChildren()) do
+    v.CanCollide = true --Chnage this to false to be able to go in the water (so if u wanna have a toggle
+    end
+    game.StarterGui:SetCore("SendNotification", {Title="Solid Water Enabled"; Text="Fruity Pebbles#3302"; Duration=5;})
+    else
+        for _,v in pairs(game.Workspace.Water:GetChildren()) do
+    v.CanCollide = false --Chnage this to false to be able to go in the water (so if u wanna have a toggle
+    end
+    game.StarterGui:SetCore("SendNotification", {Title="Solid Water Disabled"; Text="Fruity Pebbles#3302"; Duration=5;})
+    end
+end)
+
+WorldSection:NewSlider("FullBright", "Makes u see in the dark", 10, 0, function(s)
+    game.Lighting.Brightness = s
+end)
+
+WorldSection:NewToggle("No Shadows", "No Shadows", function(state)
+    if state then
+        game.Lighting.GlobalShadows = false
+    else
+        game.Lighting.GlobalShadows = true
+    end
+end)
